@@ -33,7 +33,7 @@
 
 <br>
 
-## Why teams reach for CAPTF
+## Why you should reach for CAPTF
 
 <table>
   <tr>
@@ -109,13 +109,6 @@ That's the core of it: every machine stamped from that template is now built by 
 > **Get in early.** CAPTF is `v1alpha1` and pre-release, and its module contract is still open to change.
 > If you have Terraform that builds clusters, this is the moment to shape how CAPTF runs it.
 > Try the [Quick Start](https://docs.captf.io/getting-started/quick-start.html), then open an issue and tell us what your platform needs.
-
-## Explore
-
-- **[cluster-api-provider-terraform](https://github.com/captf-io/cluster-api-provider-terraform)**: the provider, with its manager, runner, `tfcapi-lint` and reference modules.
-- **[docs](https://github.com/captf-io/docs)**: the book behind [docs.captf.io](https://docs.captf.io/).
-- **[opentofu-base](https://github.com/captf-io/opentofu-base)**: `ghcr.io/captf-io/opentofu-base`, the base image for OpenTofu modules.
-- **[terraform-base](https://github.com/captf-io/terraform-base)**: `ghcr.io/captf-io/terraform-base`, the base image for Terraform modules.
 
 <br>
 
