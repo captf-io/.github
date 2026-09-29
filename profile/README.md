@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://docs.captf.io/">
-    <img src="https://raw.githubusercontent.com/captf-io/.github/main/profile/assets/hero.svg" width="100%" alt="CAPTF: your modules are the provider. Turn the Terraform and OpenTofu you already trust into Kubernetes clusters, on any platform.">
+    <img src="https://raw.githubusercontent.com/captf-io/.github/refs/heads/main/profile/assets/hero.svg" width="100%" alt="CAPTF: your modules are the provider. Turn the Terraform and OpenTofu you already trust into Kubernetes clusters, on any platform.">
   </a>
 </p>
 
@@ -28,7 +28,7 @@
 <br>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/captf-io/.github/main/profile/assets/how-it-works.svg" width="100%" alt="How it works: write a Terraform or OpenTofu module, package it as an OCI image, CAPTF runs it as Kubernetes Jobs, and Cluster API gets a real cluster.">
+  <img src="https://raw.githubusercontent.com/captf-io/.github/refs/heads/main/profile/assets/how-it-works.svg" width="100%" alt="How it works: write a Terraform or OpenTofu module, package it as an OCI image, CAPTF runs it as Kubernetes Jobs, and Cluster API gets a real cluster.">
 </p>
 
 <br>
