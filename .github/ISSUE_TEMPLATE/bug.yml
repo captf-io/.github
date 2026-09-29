@@ -7,7 +7,7 @@ body:
       value: |
         **Do not paste credentials.** State Secrets, identity Secrets, runner
         Job environment and module outputs can hold cloud credentials; see the
-        [Security Model](https://docs.captf.io/concepts/security-model.html).
+        [Security Model](https://captf.io/docs/concepts/security-model.html).
         Redact them before pasting anything below. Report vulnerabilities
         through [SECURITY.md](https://github.com/captf-io/.github/blob/main/SECURITY.md)
         instead.

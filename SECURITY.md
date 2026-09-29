@@ -36,7 +36,7 @@ you prefer not to be named) once a fixed release is out.
 CAPTF runs whatever module image a `Terraform*` object names, with that
 namespace's runner access and the resolved identity's cloud credentials.
 That is by design: the image is the trust boundary, as the
-[Security Model](https://docs.captf.io/concepts/security-model.html)
+[Security Model](https://captf.io/docs/concepts/security-model.html)
 explains. A module doing what its code says is not a CAPTF vulnerability.
 Ways to exceed what that page says an object grants are, for example:
 

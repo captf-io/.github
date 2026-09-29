@@ -4,5 +4,5 @@ contact_links:
     url: https://github.com/captf-io/.github/blob/main/SECURITY.md
     about: Report security issues privately, never in a public issue.
   - name: Documentation
-    url: https://docs.captf.io/
+    url: https://captf.io/docs/
     about: Check the book for installation, module-authoring and troubleshooting guidance first.

@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Check [docs.captf.io](https://docs.captf.io/) first. If the answer
+        Check [captf.io/docs](https://captf.io/docs/) first. If the answer
         turns out to be missing from the docs, that is worth fixing too.
   - type: textarea
     id: question

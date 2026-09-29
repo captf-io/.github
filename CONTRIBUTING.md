@@ -5,19 +5,19 @@ not carry its own copy.
 
 ## Before you start
 
-- **Questions and bugs:** check the [docs](https://docs.captf.io/) first,
+- **Questions and bugs:** check the [docs](https://captf.io/docs/) first,
   then open an issue using the matching form.
 - **Vulnerabilities:** never in a public issue. See
   [SECURITY.md](SECURITY.md).
 - **Larger changes:** open an issue describing the change before writing
   it, especially anything that touches the API, the
-  [module contract](https://docs.captf.io/module-author/contract/README.html) or the
+  [module contract](https://captf.io/docs/module-author/contract/README.html) or the
   security model. CAPTF is `v1alpha1`, but a contract change still breaks
   every module written against it.
 
 ## Making a change
 
-The [Developer Guide](https://docs.captf.io/developer-guide/contributing.html)
+The [Developer Guide](https://captf.io/docs/developer-guide/contributing.html)
 covers the provider repository: its layout, prerequisites, the
 build/lint/test/verify loop and the conventions the checks enforce. Each
 other repository documents its own checks in its `README.md`.
