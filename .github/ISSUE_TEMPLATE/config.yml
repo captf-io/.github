@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a vulnerability
+    url: https://github.com/captf-io/.github/blob/main/SECURITY.md
+    about: Report security issues privately, never in a public issue.
+  - name: Documentation
+    url: https://docs.captf.io/
+    about: Check the book for installation, module-authoring and troubleshooting guidance first.

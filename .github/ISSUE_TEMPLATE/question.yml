@@ -1,0 +1,16 @@
+name: Question
+description: Ask how to do something the docs do not answer.
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check [docs.captf.io](https://docs.captf.io/) first. If the answer
+        turns out to be missing from the docs, that is worth fixing too.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What you are trying to do, and what you have tried. Do not paste credentials.
+    validations:
+      required: true

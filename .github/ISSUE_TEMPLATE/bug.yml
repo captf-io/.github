@@ -1,0 +1,70 @@
+name: Bug report
+description: Something in CAPTF, a base image or the docs does not work as documented.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not paste credentials.** State Secrets, identity Secrets, runner
+        Job environment and module outputs can hold cloud credentials; see the
+        [Security Model](https://docs.captf.io/concepts/security-model.html).
+        Redact them before pasting anything below. Report vulnerabilities
+        through [SECURITY.md](https://github.com/captf-io/.github/blob/main/SECURITY.md)
+        instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: The smallest steps that show it. A reproduction with the `noop` module is ideal.
+    validations:
+      required: true
+  - type: input
+    id: captf-version
+    attributes:
+      label: CAPTF version
+      description: The release tag or manager image digest.
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: capi-version
+    attributes:
+      label: Cluster API version
+      placeholder: v1.11.0
+  - type: input
+    id: k8s-version
+    attributes:
+      label: Kubernetes version (management cluster)
+      placeholder: v1.34.1
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Runtime
+      options:
+        - OpenTofu
+        - Terraform
+        - Not applicable
+  - type: input
+    id: module-image
+    attributes:
+      label: Module image
+      description: The `spec.source.image` in use, if the bug involves running a module.
+  - type: textarea
+    id: objects
+    attributes:
+      label: Relevant objects
+      description: The `Terraform*` object YAML (`kubectl get -o yaml`), including its status and conditions. Redact before pasting.
+      render: yaml
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Manager logs and the runner Job's logs around the failure. Redact before pasting.
+      render: text
