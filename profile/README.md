@@ -9,10 +9,29 @@
 > If you have Terraform that builds clusters, this is the moment to shape how CAPTF runs it.
 > Try the [Quick Start](https://captf.io/docs/getting-started/quick-start.html), then open an issue and tell us what your platform needs.
 
+<!-- captf:footer -->
+<br>
 <p align="center">
-  <a href="https://captf.io/docs/"><b>Documentation</b></a> ·
-  <a href="https://github.com/captf-io/.github/blob/main/CONTRIBUTING.md"><b>Contributing</b></a> ·
-  <a href="https://github.com/captf-io/.github/blob/main/SECURITY.md"><b>Security</b></a>
-  <br>
-  <sub>Built for <a href="https://cluster-api.sigs.k8s.io/">Cluster API</a>. Apache 2.0.</sub>
+  <img
+    src="https://raw.githubusercontent.com/captf-io/.github/refs/heads/main/readme/assets/divider.svg"
+    width="100%" height="4" alt="">
 </p>
+<p align="center">
+  <a href="https://captf.io/"><img
+    src="https://raw.githubusercontent.com/captf-io/.github/refs/heads/main/readme/assets/mark.svg"
+    width="40" height="40" alt="CAPTF"></a>
+  <br>
+  <a href="https://captf.io/docs/"
+    ><b>Documentation</b></a> ·
+  <a href="https://captf.io/docs/getting-started/quick-start.html"
+    ><b>Quick start</b></a> ·
+  <a href="https://github.com/captf-io/.github/blob/main/CONTRIBUTING.md"
+    ><b>Contributing</b></a> ·
+  <a href="https://github.com/captf-io/.github/blob/main/SECURITY.md"
+    ><b>Security</b></a>
+  <br>
+  <sub>Built for
+    <a href="https://cluster-api.sigs.k8s.io/">Cluster API</a>.
+    Apache 2.0.</sub>
+</p>
+<!-- /captf:footer -->
