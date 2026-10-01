@@ -1,0 +1,4 @@
+<!-- The CAPTF mark, from the favicon. -->
+<rect class="tile" x="-60" y="-60" width="120" height="120" rx="20" stroke="#A974FF" stroke-opacity=".7"/>
+<path d="M0 -36 31.2 -18v36L0 36-31.2 18v-36Z" fill="none" stroke="url(#wire)" stroke-width="6" stroke-linejoin="round"/>
+<circle cx="0" cy="0" r="11" fill="#FFD84D"/>

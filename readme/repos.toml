@@ -1,0 +1,95 @@
+# The repositories whose README carries the CAPTF fragments; see README.md.
+#
+#   name     Repository in captf-io; the banner's title.
+#   kind     The banner's eyebrow, after "CAPTF ·".
+#   glyph    templates/glyphs/<glyph>.svg, drawn on the banner's right.
+#   tagline  The banner's second line: one plain sentence, no full stop,
+#            at most 60 characters.
+#   dir      Its checkout, relative to the workspace. Default: <name>.
+#   readme   The README, relative to its checkout. Default: README.md.
+#   href     Where the banner links. Default: https://captf.io/docs/.
+#   ci       Workflow file for the build badge, if the repository is public.
+#   license  Link the license in the footer to LICENSE.md. Default: true.
+#   banner   Render a banner; false for a README without a header block.
+#            Default: true.
+
+[[repo]]
+name = "cluster-api-provider-terraform"
+kind = "Provider"
+glyph = "job"
+tagline = "Run Terraform and OpenTofu modules as Cluster API providers"
+dir = "../cluster-api-provider-terraform"
+
+[[repo]]
+name = "terraform-base"
+kind = "Base image"
+glyph = "image"
+tagline = "The Terraform base image for CAPTF module images"
+ci = "build.yml"
+
+[[repo]]
+name = "opentofu-base"
+kind = "Base image"
+glyph = "image"
+tagline = "The OpenTofu base image for CAPTF module images"
+ci = "build.yml"
+
+[[repo]]
+name = "noop-modules"
+kind = "Modules"
+glyph = "module"
+tagline = "No-op module images for trying and testing CAPTF"
+ci = "build.yml"
+
+[[repo]]
+name = "aws-modules"
+kind = "Modules"
+glyph = "module"
+tagline = "Reference CAPTF modules for Amazon Web Services"
+
+[[repo]]
+name = "azure-modules"
+kind = "Modules"
+glyph = "module"
+tagline = "Reference CAPTF modules for Microsoft Azure"
+
+[[repo]]
+name = "gcp-modules"
+kind = "Modules"
+glyph = "module"
+tagline = "Reference CAPTF modules for Google Cloud"
+
+[[repo]]
+name = "oci-modules"
+kind = "Modules"
+glyph = "module"
+tagline = "Reference CAPTF modules for Oracle Cloud Infrastructure"
+
+[[repo]]
+name = "openstack-modules"
+kind = "Modules"
+glyph = "module"
+tagline = "Reference CAPTF modules for OpenStack"
+
+[[repo]]
+name = "docs"
+kind = "Documentation"
+glyph = "book"
+tagline = "The CAPTF book, published at captf.io/docs"
+ci = "pages.yml"
+
+[[repo]]
+name = "captf-io.github.io"
+kind = "Website"
+glyph = "site"
+tagline = "The captf.io landing page"
+href = "https://captf.io/"
+ci = "pages.yml"
+
+# The org profile: it has the hero instead of a banner, so it only takes
+# the footer. The repository has no LICENSE.md.
+[[repo]]
+name = ".github"
+banner = false
+readme = "profile/README.md"
+license = false
