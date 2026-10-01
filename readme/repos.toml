@@ -6,7 +6,8 @@
 #   tagline  The banner's second line: one plain sentence, no full stop,
 #            at most 60 characters.
 #   dir      Its checkout, relative to the workspace. Default: <name>.
-#   readme   The README, relative to its checkout. Default: README.md.
+#   readme   The README, relative to its checkout, or a list of them.
+#            Default: README.md.
 #   href     Where the banner links. Default: https://captf.io/docs/.
 #   ci       Workflow file for the build badge, if the repository is public.
 #   license  Link the license in the footer to LICENSE.md. Default: true.
@@ -86,10 +87,13 @@ tagline = "The captf.io landing page"
 href = "https://captf.io/"
 ci = "pages.yml"
 
-# The org profile: it has the hero instead of a banner, so it only takes
-# the footer. The repository has no LICENSE.md.
+# This repository. The org profile has the hero instead of a banner, so it
+# has only the footer block. The repository has no LICENSE.md.
 [[repo]]
 name = ".github"
-banner = false
-readme = "profile/README.md"
+kind = "Community"
+glyph = "mark"
+tagline = "The org profile and community health files for CAPTF"
+readme = ["README.md", "profile/README.md"]
+href = "https://github.com/captf-io"
 license = false

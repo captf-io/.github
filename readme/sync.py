@@ -194,15 +194,17 @@ def main():
             update(BANNERS / f"{slug(repo)}.svg", banner(repo), args.check, stale)
 
         checkout = CHECKOUT if repo["name"] == ".github" else args.workspace / repo.get("dir", repo["name"])
-        readme = (checkout / repo.get("readme", "README.md")).resolve()
-        if not readme.exists():
-            print(f"skip {repo['name']}: no {readme}")
-            continue
-        text, unknown = sync_readme(readme.read_text(), fragments(repo))
-        for name in unknown:
-            print(f"{readme}: unknown block captf:{name} (have {', '.join(FRAGMENTS)})")
-            failed = True
-        update(readme, text, args.check, stale)
+        readmes = repo.get("readme", "README.md")
+        for rel in [readmes] if isinstance(readmes, str) else readmes:
+            readme = (checkout / rel).resolve()
+            if not readme.exists():
+                print(f"skip {repo['name']}: no {readme}")
+                continue
+            text, unknown = sync_readme(readme.read_text(), fragments(repo))
+            for name in unknown:
+                print(f"{readme}: unknown block captf:{name} (have {', '.join(FRAGMENTS)})")
+                failed = True
+            update(readme, text, args.check, stale)
 
     for path in stale:
         print(("stale " if args.check else "wrote ") + str(path))
