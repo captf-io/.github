@@ -19,7 +19,7 @@ name = "cluster-api-provider-terraform"
 kind = "Provider"
 glyph = "job"
 tagline = "Run Terraform and OpenTofu modules as Cluster API providers"
-dir = "../cluster-api-provider-terraform"
+ci = "ci.yaml"
 
 [[repo]]
 name = "terraform-base"
@@ -47,48 +47,47 @@ name = "aws-modules"
 kind = "Modules"
 glyph = "module"
 tagline = "Reference CAPTF modules for Amazon Web Services"
+ci = "build.yml"
 
 [[repo]]
 name = "azure-modules"
 kind = "Modules"
 glyph = "module"
 tagline = "Reference CAPTF modules for Microsoft Azure"
+ci = "build.yml"
 
 [[repo]]
 name = "gcp-modules"
 kind = "Modules"
 glyph = "module"
 tagline = "Reference CAPTF modules for Google Cloud"
+ci = "build.yml"
 
 [[repo]]
 name = "oci-modules"
 kind = "Modules"
 glyph = "module"
 tagline = "Reference CAPTF modules for Oracle Cloud Infrastructure"
+ci = "build.yml"
 
 [[repo]]
 name = "openstack-modules"
 kind = "Modules"
 glyph = "module"
 tagline = "Reference CAPTF modules for OpenStack"
-
-[[repo]]
-name = "docs"
-kind = "Documentation"
-glyph = "book"
-tagline = "The CAPTF book, published at captf.io/docs"
-ci = "pages.yml"
+ci = "build.yml"
 
 [[repo]]
 name = "captf-io.github.io"
 kind = "Website"
 glyph = "site"
-tagline = "The captf.io landing page"
+tagline = "The captf.io website, docs book and blog"
 href = "https://captf.io/"
 ci = "pages.yml"
 
 # This repository. The org profile has the hero instead of a banner, so it
-# has only the footer block. The repository has no LICENSE.md.
+# has only the footer block. No license badge or link: the profile renders
+# outside the repository, where a relative LICENSE.md link would break.
 [[repo]]
 name = ".github"
 kind = "Community"
