@@ -1,4 +1,0 @@
-<!-- A Terraform module: the diagram's "01 · WRITE" tile. -->
-<rect class="tile" x="-60" y="-60" width="120" height="120" rx="20" stroke="#A974FF" stroke-opacity=".7"/>
-<text x="-6" y="12" class="mono" font-size="34" font-weight="700" fill="#A974FF" text-anchor="middle">.tf</text>
-<rect class="cursor" x="32" y="-10" width="3" height="26" fill="#FFD84D"/>

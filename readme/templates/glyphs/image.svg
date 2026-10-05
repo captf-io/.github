@@ -1,7 +1,0 @@
-<!-- An OCI image: the diagram's "02 · PACKAGE" tile. -->
-<rect class="tile" x="-60" y="-60" width="120" height="120" rx="20" stroke="#8C7CFF" stroke-opacity=".7"/>
-<g fill="none" stroke-width="3" stroke-linejoin="round">
-  <path d="M0 -28l34 16-34 16-34-16z" stroke="#FFD84D"/>
-  <path d="M-34 2l34 16 34-16" stroke="#8C7CFF"/>
-  <path d="M-34 16l34 16 34-16" stroke="#5B8CFF"/>
-</g>
