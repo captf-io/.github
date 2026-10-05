@@ -25,7 +25,7 @@
 The organization-wide files for [CAPTF](https://captf.io/), Cluster API
 Provider Terraform: the profile shown at
 [github.com/captf-io](https://github.com/captf-io), the community health
-files every `captf-io` repository inherits, and the fragments that give
+files each `captf-io` repository carries a copy of, and the fragments that give
 each repository's README the same header and footer.
 
 | Path | Holds |
@@ -39,10 +39,11 @@ each repository's README the same header and footer.
 
 ## Community health files
 
-GitHub uses `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, the
-issue forms and the pull request template for every `captf-io`
-repository that has none of its own. A repository that needs different
-rules carries its own copy; change the shared one here.
+Every `captf-io` repository carries its own `CONTRIBUTING.md`,
+`SECURITY.md` and `CODE_OF_CONDUCT.md` at its root. GitHub uses the
+issue forms and the pull request template here for every repository that
+has none of its own. Keep the copies of the three files in step with the
+ones here.
 
 Blank issues are off: an issue starts from a form, and the chooser points
 vulnerability reports at `SECURITY.md` and questions at the
