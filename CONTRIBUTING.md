@@ -1,7 +1,6 @@
 # Contributing to CAPTF
 
-Thanks for helping. This file covers every `captf-io` repository that does
-not carry its own copy.
+Thanks for helping. Every `captf-io` repository carries this same file.
 
 ## Before you start
 
@@ -27,8 +26,15 @@ In short:
 1. Fork the repository and branch from `main`.
 2. Make one logical change per commit, with tests where the repository
    has them.
-3. Run the repository's checks: `make verify` in the provider and the
-   docs, and `make test` in the base images.
+3. Run the repository's checks:
+
+   | Repository | Checks |
+   | --- | --- |
+   | `cluster-api-provider-terraform` | `make lint test verify` |
+   | `*-modules` (cloud) | `make verify`, then `make test` |
+   | `noop-modules`, `*-base` | `make test` |
+   | `captf-io.github.io` | `make gen && make build` |
+
 4. Open a pull request against `main` and fill in the template.
 
 ## Commit messages
